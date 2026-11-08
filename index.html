@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COMP 3512 Store | Browse</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- type="module" is required for the JSON import in the assignment spec -->
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#home">Your Store Name</a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#browse" aria-current="page">Browse</a>
+      <a href="#about">About</a>
+      <a href="#cart">Cart <span id="cart-count" class="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <article id="browse">
+      <h1>Browse</h1>
+
+      <!-- Assignment 2: filters go here -->
+      <section id="filter" hidden></section>
+
+      <section id="results" aria-label="Product results">
+        <!--
+          Your JS fills this in. Expected markup for each product
+          (the CSS in style.css is written for these class names):
+
+          <article class="product-card">
+            <img class="product-thumb" src="..." alt="...">
+            <div class="product-info">
+              <h2 class="product-title">Title</h2>
+              <p class="product-price">$9.99</p>
+              <button class="add-btn" type="button" aria-label="Add to cart">+</button>
+            </div>
+          </article>
+        -->
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>COMP 3512 Assignment 1</p>
+    <p><a href="https://github.com/your-username/your-repo">GitHub repository</a></p>
+  </footer>
+
+</body>
+</html>
